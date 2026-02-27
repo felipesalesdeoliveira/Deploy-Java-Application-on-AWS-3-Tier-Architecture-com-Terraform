@@ -1,0 +1,94 @@
+############################
+# SISTEMA (macOS)
+############################
+.DS_Store
+.AppleDouble
+.LSOverride
+
+############################
+# VSCode
+############################
+.vscode/
+.history/
+
+############################
+# IDEs
+############################
+.idea/
+*.iml
+
+############################
+# JAVA
+############################
+*.class
+*.jar
+*.war
+*.ear
+
+############################
+# LOGS
+############################
+logs/
+*.log
+
+############################
+# BUILD / DEPLOYMENT
+############################
+target/
+build/
+.gradle/
+dist/
+coverage/
+tmp/
+temp/
+*.pid
+*.seed
+
+############################
+# NODE
+############################
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+############################
+# MAVEN
+############################
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+release.properties
+dependency-reduced-pom.xml
+
+############################
+# DOCKER
+############################
+Dockerfile.*
+docker-compose*.yml
+docker-compose.override.yml
+
+############################
+# TERRAFORM
+############################
+# State files
+*.tfstate
+*.tfstate.backup
+# Crash logs
+crash.log
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+# CLI configuration
+.terraformrc
+terraform.rc
+# Terraform directories
+.terraform/
+
+############################
+# OTHERS
+############################
+.idea/
+*.swp

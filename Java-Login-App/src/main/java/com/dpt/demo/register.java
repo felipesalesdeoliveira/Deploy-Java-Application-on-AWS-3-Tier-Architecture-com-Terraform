@@ -35,7 +35,7 @@ public class register {
 	
 	
 	@RequestMapping(value = "register", method = RequestMethod.POST)
-	public ModelAndView register(String firstName,String lastName,String email,String userName,String password) throws ClassNotFoundException
+	public ModelAndView doRegister(String firstName,String lastName,String email,String userName,String password) throws ClassNotFoundException
 	{
 		Class.forName("com.mysql.jdbc.Driver");
 		//Add employee here

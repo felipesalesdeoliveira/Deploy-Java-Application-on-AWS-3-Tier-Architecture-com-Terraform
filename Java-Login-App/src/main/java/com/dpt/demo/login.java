@@ -6,8 +6,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import javax.websocket.Session;
-
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -31,7 +29,7 @@ public class login {
 	private String errorMessage="";
 	
 	@RequestMapping(value = "login", method = RequestMethod.POST)
-	public ModelAndView login(String userName, String password) throws ClassNotFoundException {
+	public ModelAndView doLogin(String userName, String password) throws ClassNotFoundException {
 
 		
 		Class.forName("com.mysql.jdbc.Driver");
