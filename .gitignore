@@ -86,6 +86,8 @@ override.tf.json
 terraform.rc
 # Terraform directories
 .terraform/
+*.tfvars
+backend.tf
 
 ############################
 # OTHERS

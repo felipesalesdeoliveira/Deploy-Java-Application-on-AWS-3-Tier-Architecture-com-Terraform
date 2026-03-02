@@ -1,0 +1,39 @@
+aws_region               = "us-east-1"
+project_name             = "java-3tier"
+environment              = "dev"
+
+app_vpc_cidr             = "192.168.0.0/16"
+data_vpc_cidr            = "172.32.0.0/16"
+
+app_public_subnet_cidrs  = ["192.168.1.0/24", "192.168.2.0/24"]
+app_private_subnet_cidrs = ["192.168.11.0/24", "192.168.12.0/24"]
+data_private_subnet_cidrs = ["172.32.11.0/24", "172.32.12.0/24"]
+
+single_nat_gateway       = true
+ingress_http_cidrs       = ["0.0.0.0/0"]
+
+frontend_instance_type   = "t3.micro"
+backend_instance_type    = "t3.micro"
+frontend_desired         = 2
+frontend_min             = 2
+frontend_max             = 3
+backend_desired          = 2
+backend_min              = 2
+backend_max              = 3
+
+db_name                  = "UserDB"
+db_username              = "admin"
+db_password              = "CHANGE_ME"
+db_instance_class        = "db.t3.medium"
+db_allocated_storage     = 20
+db_multi_az              = true
+db_replica_count         = 1
+db_backup_retention      = 7
+db_deletion_protection   = false
+
+create_bastion           = true
+bastion_instance_type    = "t3.micro"
+bastion_allowed_ssh_cidrs = ["YOUR_PUBLIC_IP/32"]
+bastion_key_name         = null
+
+java_artifact_url        = ""
